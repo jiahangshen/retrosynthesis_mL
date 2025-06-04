@@ -43,23 +43,8 @@ python prepare_mol_graph.py --retro
 
 We may train in single process mode or multi-process mode, which is much faster. We train models in multi process mode to report results.
 
-
-### Single Process (slow)
-
 ```
-python run_retro.py  --device 1
-
-# for with types setting
-python run_retro.py  --device 1  --typed
-```
-
-### Multi Process (fast)
-
-```
-python run_retro.py  --device 1  --multiprocess
-
-# for with types setting
-python run_retro.py  --device 1  --multiprocess --typed 
+python chem_doml.py  --device 0
 ```
 
 ## Testing
@@ -68,20 +53,9 @@ Testing can also be done in single or multi process mode.
 ### Single Process (slow)
 
 ```
-python run_retro.py  --device 1 --input_model_file model.pt --test_only
-
-# for with types setting
-python run_retro.py  --device 1 --input_model_file model.pt --test_only --typed
+python chem_doml.py  --device 1 --input_model_file model.pt --test_only
 ```
 
-### Multi Process (fast)
-
-```
-python run_retro.py  --device 1 --multiprocess  --input_model_file model.pt --test_only  
-
-# for with types setting
-python run_retro.py  --device 1 --multiprocess  --input_model_file model.pt --test_only  --typed
-```
 
 ### Run testing on validation and training splits:
 ```
