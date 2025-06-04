@@ -1,0 +1,14 @@
+
+input model checkpoint file: model.pt
+weight: 0.4
+ranking for 5002 examples, pred_results len = 5002
+top-1: 0.566773
+top-2: 0.729508
+top-3: 0.795882
+top-4: 0.832467
+top-5: 0.851459
+top-6: 0.868053
+top-7: 0.877449
+top-8: 0.883447
+top-9: 0.887645
+top-10: 0.890044

@@ -1,0 +1,17 @@
+Namespace(JK='concat', adv_weight=0.3, atom_feat_dim=45, batch_size=32, beam_size=50, bond_feat_dim=12, center_loss_type='ce', dataset='data/USPTO50K', decay=0, device=0, dropout_ratio=0.2, emb_dim=300, epochs=80, eval_split='test', filename='uspto50k', graph_pooling='attention', input_model_file='model0_5.pt', lr=0.0003, multiprocess=False, num_domains=10, num_layer=6, num_process=4, onehot_center=False, runseed=0, test_only=False, typed=False)
+Traceback (most recent call last):
+  File "chem_doml.py", line 458, in <module>
+    main()
+  File "chem_doml.py", line 284, in main
+    model.to(device)
+  File "/root/miniconda3/envs/RC/lib/python3.7/site-packages/torch/nn/modules/module.py", line 612, in to
+    return self._apply(convert)
+  File "/root/miniconda3/envs/RC/lib/python3.7/site-packages/torch/nn/modules/module.py", line 359, in _apply
+    module._apply(fn)
+  File "/root/miniconda3/envs/RC/lib/python3.7/site-packages/torch/nn/modules/module.py", line 359, in _apply
+    module._apply(fn)
+  File "/root/miniconda3/envs/RC/lib/python3.7/site-packages/torch/nn/modules/module.py", line 381, in _apply
+    param_applied = fn(param)
+  File "/root/miniconda3/envs/RC/lib/python3.7/site-packages/torch/nn/modules/module.py", line 610, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+RuntimeError: CUDA error: out of memory
