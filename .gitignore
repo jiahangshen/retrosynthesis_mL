@@ -1,0 +1,9 @@
+# Large data files
+RetroComposer/logs/USPTO50K/uspto50k/beam_result_train.json
+RetroComposer/data/USPTO50K/templates_train.json
+
+# You might want to add other patterns for logs or data
+# For example:
+# RetroComposer/logs/
+# RetroComposer/data/
+# *.json # Be careful, this ignores all json files
