@@ -84,6 +84,9 @@ Domain 6: 63.72% (3765/5909)
 Domain 7: 64.69% (2109/3260)
 Domain 8: 64.55% (335/519)
 Domain 9: 63.41% (752/1186)
-Domain 10: 65.69% (90/137)```
+Domain 10: 65.69% (90/137)
+
+```
+Path of pretrained checkpoint is 'logs/USPTO50K/uspto50k/retro_model.pt'
 
 
