@@ -73,5 +73,17 @@ logs/USPTO50K/uspto50k_typed/beam_result_test.json
 logs/USPTO50K/uspto50k_typed/beam_result_train.json
 logs/USPTO50K/uspto50k_typed/beam_result_valid.json
 ```
+results in Domain 1 ~ 10
+```
+Domain 1: 65.14% (6978/10712)
+Domain 2: 65.60% (5669/8642)
+Domain 3: 65.22% (2175/3335)
+Domain 4: 65.97% (314/476)
+Domain 5: 63.52% (296/466)
+Domain 6: 63.72% (3765/5909)
+Domain 7: 64.69% (2109/3260)
+Domain 8: 64.55% (335/519)
+Domain 9: 63.41% (752/1186)
+Domain 10: 65.69% (90/137)```
 
 
