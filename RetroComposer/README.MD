@@ -40,33 +40,26 @@ python prepare_mol_graph.py --retro
 
 ## Training
 
-We may train in single process mode or multi-process mode, which is much faster. We train models in multi process mode to report results.
 
 ```
 python chem_doml.py  --device 0
 ```
 
 ## Testing
-Testing can also be done in single or multi process mode.
-
-### Single Process (slow)
-
 ```
 python chem_doml.py  --device 1 --input_model_file model.pt --test_only
 ```
-
-
 ### Run testing on validation and training splits:
 ```
 # run validation split
-python run_retro.py  --device 1 --multiprocess  --input_model_file model.pt --test_only  --eval_split valid 
+python run_retro.py  --device 1 --input_model_file model.pt --test_only  --eval_split valid 
 
 # run training split
-python run_retro.py  --device 1 --multiprocess  --input_model_file model.pt --test_only  --eval_split train
+python run_retro.py  --device 1 --input_model_file model.pt --test_only  --eval_split train
 
 # for with types setting
-python run_retro.py  --device 1 --multiprocess  --input_model_file model.pt --test_only  --eval_split valid --typed 
-python run_retro.py  --device 1 --multiprocess  --input_model_file model.pt --test_only  --eval_split train --typed
+python run_retro.py  --device 1 --input_model_file model.pt --test_only  --eval_split valid --typed 
+python run_retro.py  --device 1 --input_model_file model.pt --test_only  --eval_split train --typed
 ```
 
 You can find three json files in the log directory:
