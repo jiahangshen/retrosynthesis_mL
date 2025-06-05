@@ -32,7 +32,7 @@ data/USPTO50K/templates_train.json
 data/USPTO50K/templates_valid.json
 ```
 
-Then we generate training data for stage 1:
+Then we generate training data:
 ```
 python prepare_mol_graph.py --retro   
 ```
