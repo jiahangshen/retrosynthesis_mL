@@ -11,8 +11,7 @@ torch-scatter                 2.0.6
 torch-sparse                  0.6.9
 ```
 
-# Stage 1
-In the stage 1, we conduct retrosynthesis by composing templates and applying the templates to target molecules.
+We conduct retrosynthesis by composing templates and applying the templates to target molecules.
 
 
 ## Preprocessing
@@ -82,34 +81,4 @@ logs/USPTO50K/uspto50k_typed/beam_result_train.json
 logs/USPTO50K/uspto50k_typed/beam_result_valid.json
 ```
 
-# Stage 2
-In the stage 2, we will train a ranking modeling to scoring the predicted reactants.
-
-## Preprocessing
-We first preprocess data for the ranking model.
-
-```
-python prepare_mol_graph.py
-
-# for with types setting
-python prepare_mol_graph.py --typed
-```
-
-## Training
-
-```
-python run_ranking.py  --device 1 --multiprocess
-
-# for with types setting
-python run_ranking.py  --device 1 --multiprocess --typed 
-```
-
-## Testing:
-
-```
-python run_ranking.py  --device 1 --test_only --input_model_file model.pt
-
-# for with types setting
-python run_ranking.py  --device 1 --test_only --input_model_file model.pt --typed 
-```
 
